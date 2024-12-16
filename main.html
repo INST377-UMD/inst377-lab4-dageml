@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INST377 - Lab 4</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="main-heading">INST377 - Lab 4</h1>
+  </header>
+
+  <section>
+    <h2>Alert Me Section</h2>
+    <form id="alert-form" onsubmit="handleAlert(event)">
+      <label for="name">Enter Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <button type="submit">Alert Me</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Change Color Section</h2>
+    <button id="change-color" onclick="toggleBackgroundColor()">Change Color</button>
+  </section>
+
+  <section>
+    <h2>Text Tester Section</h2>
+    <form id="validate-form" onsubmit="validateText(event)">
+      <label for="text-input">Enter Text:</label>
+      <input type="text" id="text-input" name="text-input">
+      <button type="submit">Validate Text</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Add Text Section</h2>
+    <button id="add-text" onclick="addText()">Add Text</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
